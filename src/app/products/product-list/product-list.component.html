@@ -18,15 +18,17 @@
     </li>
 </ul>
 
+<div class="right">
+    <a routerLink="insert">Add new product...</a>
+</div>
+
 <div>
     <button (click)="previousPage()"
             [disabled]="start == 0">
         < Previous Page
     </button>
-
+    Page {{ currentPage }}
     <button (click)="nextPage()">
         Next Page >
     </button>
 </div>
-
-<app-product-detail [product]="selectedProduct"></app-product-detail>
